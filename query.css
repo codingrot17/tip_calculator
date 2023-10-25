@@ -1,0 +1,48 @@
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: 600px;
+  }
+  .tip_select .button{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 400px;
+    margin-top: 60px;
+  }
+  .sides {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .tip_select .button{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  #reset_button{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container {
+    max-width: 300px;
+    margin-top: 60px;
+  }
+  .sides {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .tip_select .button{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: hsl(185, 41%, 84%);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 700px;
+  margin: 200px auto;
+}
+
+.sides {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: hsl(0, 0%, 100%);
+  padding: 24px;
+  gap: 24px;
+  border-radius: 10px;
+}
+
+.side_one{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input_container{
+  position: relative;
+  width: 100%;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 3px;
+}
+
+.input_container input{
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background: none;
+  text-align: end;
+  border-radius: 3px;
+}
+
+.input_container input:focus{
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.input_container img{
+  position: absolute; 
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+
+.tip_select span{
+  display: block;
+}
+
+.tip_select .button{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  
+}
+
+.tip_select .button button,
+.tip_select .button input{
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 5px;
+  width: 100px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tip_select .button button:hover{
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(172, 62%, 21%);
+}
+
+.tip_select .button #custom{
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(172, 41%, 20%);
+  text-align: end;
+  cursor: text;
+}
+
+.tip_select .button #custom:focus{
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.tip_select .button #custom::placeholder{
+  color: hsl(172, 62%, 21%);
+}
+
+
+.side_two{
+  background-color: hsl(183, 100%, 15%);
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tip, .total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side_two h4{
+  color: hsl(0, 0%, 100%);
+}
+
+.side_two p{
+  color: hsl(173, 78%, 33%);
+}
+
+.side_two #amount{
+  font-size: 25px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+#reset_button, #calculate{
+  width: 100%;
+  border-radius: 3px;
+  background-color: hsl(173, 40%, 28%);
+  border: none;
+  padding: 10px 20px;
+  color: hsl(174, 46%, 13%);
+  cursor: pointer;
+}
+
+#reset_button:hover, #calculate:hover{
+  background-color: #26c0ab;
+}
+#reset_button{
+  margin-top: 80px;
+}
+
+#calculate{
+  margin-top: 10px;
+}
+
+.error{
+  color: red;
+}
